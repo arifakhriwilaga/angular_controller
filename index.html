@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="js/angular.js"></script>
+<body  ng-app="appModule">
+<!-- your code -->
+<!-- example controller-->
+ <div>
+    <div ng-controller="appCtrlUser">
+        <p ng-bind="name">{{ name }}</p>
+        <p>{{ job }}</p>
+        <p>
+            <span ng-repeat="skill in skills">{{ skill }}</span>
+        </p>
+    </div>
+</div>
+<!-- example controller can also create method for computation scope -->
+ <div>
+    <div ng-controller="appCtrlUserCreate">
+        <p ng-bind="name_create">{{ name }}</p>
+        <button ng-click="rename('AngularJs')">Click Me</button>
+    </div>
+</div>
+<!-- end code -->
+
+<script src="js/module-file.js">
+</script>
+</body>
+</html>
